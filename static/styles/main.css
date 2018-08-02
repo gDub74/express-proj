@@ -1,20 +1,43 @@
 body{
-    background-color: brown
+    display: grid;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(25, 79, 69), rgb(85, 173, 163));
+}
+
+#logoContainerDiv{
+    display: block;
+    height: 75vh;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+#logo{
+    height: 100%;
+}
+
+svg{
+    filter: drop-shadow(5px 5px 5px)
+}
+svg:hover{
+    filter: drop-shadow(6px 6px 5px)
 }
 
 #logoPath {
+    width: 100%; 
+    height: auto;
     stroke:black;
     stroke-width: 1;
-    stroke-dasharray: 2373;
-    stroke-dashoffset: 2373;
+    stroke-dasharray: 2375;
+    stroke-dashoffset: 2375;
     fill-opacity: 0;
-    animation: dash 4s ease-in-out forwards;
+    animation: dash 3.2s ease-in-out forwards;
 }
   
   @keyframes dash {
-    to{ fill-opacity: 1;
-        stroke-dashoffset: 0;
-       
+    to { 
+        fill-opacity: .85;
+        stroke-dashoffset: 0; 
     }
   }
 
