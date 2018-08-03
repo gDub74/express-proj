@@ -1,12 +1,16 @@
 body{
+    /* background-color: rgb(137, 185, 197); */
+    background: linear-gradient(to right, rgb(25, 79, 69), rgb(85, 173, 163));
+}
+
+header {
     font-family: 'Lora', sans-serif;
     display: grid;
     height: 100vh;
-    background: linear-gradient(to right, rgb(25, 79, 69), rgb(85, 173, 163));
     grid-template: repeat(5, 1fr) /  repeat(3, 1fr);
 }
 
-#logoContainerDiv{
+#logoContainerDiv {
     display: block;
     height: 75vh;
     grid-area: 2 / 1 / auto / span 3;
@@ -16,30 +20,30 @@ body{
 }
 
 
-#tagLine{
+#tagLineDiv {
     grid-area: 3 / 2 / auto / span 2;
     opacity: 0;
     animation: tagAnimation 2s 3s forwards ease-in-out;
 }
+   
+    @keyframes tagAnimation {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+            transform: translate(2vw, -20vh);
+            
+        }
+    }
 
-h1{
-    font-size: 2.5em;
+
+#tagLine {
+    font-size: 5vh;
     color: rgb(7, 45, 49);
 }
 
-@keyframes tagAnimation{
-    0%{
-        opacity: 0;
-        }
-    100%{
-        opacity: 1;
-        transform: translateY(-20vh);
-
-        }
-}
-
-
-#logo{
+#logo {
     height: 100%;
     width: 75vw;
 }
@@ -47,7 +51,7 @@ h1{
 svg{
     filter: drop-shadow(5px 5px 5px)
 }
-svg:hover{
+svg:hover {
     filter: drop-shadow(6px 6px 5px)
 }
 
@@ -62,11 +66,35 @@ svg:hover{
     animation: dash 3.2s ease-in forwards;
 }
   
-  @keyframes dash {
-    to { 
-        fill-opacity: .85;
-        stroke-dashoffset: 0; 
+    @keyframes dash {
+        to { 
+            fill-opacity: .85;
+            stroke-dashoffset: 0; 
+        }
     }
-  }
 
-  
+
+#works {
+      margin: 5vh 15vw 0px 15vw;
+      height: 50vh;
+      display: grid;
+      justify-items: center;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      animation: moveWorkUp 3s forwards 4s linear;
+}
+
+@keyframes moveWorkUp{
+    100%{
+        transform: translateY(-15%);
+        }
+}
+
+
+  #works div {
+      background-color: brown;
+      display: block;
+      border: 1px solid black;
+      width: 20vh;
+      height: 20vh;
+  }
