@@ -1,3 +1,4 @@
+
 body{
     /* background-color: rgb(137, 185, 197); */
     background: linear-gradient(to right, rgb(25, 79, 69), rgb(85, 173, 163));
@@ -23,7 +24,7 @@ header {
 #tagLineDiv {
     grid-area: 3 / 2 / auto / span 2;
     opacity: 0;
-    animation: tagAnimation 2s 3s forwards ease-in-out;
+    animation: tagAnimation 2s 2.5s forwards ease-in-out;
 }
    
     @keyframes tagAnimation {
@@ -43,6 +44,10 @@ header {
     color: rgb(7, 45, 49);
 }
 
+#tagLine span {
+    color:rgb(0, 42, 37);
+}
+
 #logo {
     height: 100%;
     width: 75vw;
@@ -52,7 +57,7 @@ svg{
     filter: drop-shadow(5px 5px 5px)
 }
 svg:hover {
-    filter: drop-shadow(6px 6px 5px)
+    filter: drop-shadow(6px 6px 5px);
 }
 
 #logoPath {
@@ -63,7 +68,7 @@ svg:hover {
     stroke-dasharray: 2375;
     stroke-dashoffset: 2375;
     fill-opacity: 0;
-    animation: dash 3.2s ease-in forwards;
+    animation: dash 3.1s ease-in forwards;
 }
   
     @keyframes dash {
@@ -75,13 +80,13 @@ svg:hover {
 
 
 #works {
-      margin: 5vh 15vw 0px 15vw;
-      height: 50vh;
+      margin: 5vh 15vw 0 15vw;
       display: grid;
       justify-items: center;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: auto;
-      animation: moveWorkUp 3s forwards 4s linear;
+      grid-gap: 2vw;
+      animation: moveWorkUp 3s forwards 3s linear;
 }
 
 @keyframes moveWorkUp{
@@ -94,7 +99,94 @@ svg:hover {
   #works div {
       background-color: brown;
       display: block;
-      border: 1px solid black;
-      width: 20vh;
-      height: 20vh;
+      /* border: 1px solid black; */
+      width: 30vh;
+      height: 30vh;
   }
+    #works div:hover { 
+        box-shadow: 5px 5px 30px;
+    }
+
+    
+@media only screen and (max-device-width : 1366px) {
+    #works{
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 4vw
+    }
+    #works div{
+        width: 30vw;
+        height: 30vw;
+    }
+    h1{
+        line-height: 80px;
+    }
+    @keyframes moveWorkUp{
+        100%{
+            transform: translateY(-10%);
+            }
+    }
+} 
+
+
+@media only screen and (max-device-width : 768px) {
+    #works{
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 4vw
+    }
+    #works div{
+        width: 35vw;
+        height: 35vw;
+    }
+    h1{
+        line-height: 50px;
+    }
+    @keyframes moveWorkUp{
+        100%{
+            transform: translateY(-5%);
+            }
+    }
+}
+
+ 
+@media only screen and (max-device-width : 414px){
+    #works{
+        grid-template-columns: 1fr;
+        grid-row-gap: 4vw
+    }
+    #works div{
+        margin: 0px;
+        width: 70vw;
+        height: 70vw;
+    }
+    h1{
+        line-height: 50px;
+    }
+    @keyframes moveWorkUp{
+        100%{
+            transform: translateY(-5%);
+            }
+    }
+}
+
+
+
+/* 
+@media only screen and (max-device-width : 1024px) {
+    #works{
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 4vw
+    }
+    #works div{
+        width: 35vw;
+        height: 35vw;
+    }
+    h1{
+        line-height: 70px;
+    }
+} */
+
+
+#footer{
+    height: 20vh;
+    text-align: center;
+}
