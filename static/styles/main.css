@@ -1,6 +1,5 @@
 
 body{
-    /* background-color: rgb(137, 185, 197); */
     background: linear-gradient(to right, rgb(25, 79, 69), rgb(85, 173, 163));
 }
 
@@ -34,7 +33,6 @@ header {
         100%{
             opacity: 1;
             transform: translate(2vw, -20vh);
-            
         }
     }
 
@@ -81,25 +79,15 @@ svg:hover {
 
 #works {
     margin: 5vh 15vw 0 15vw;
-    /* display: grid; */
     justify-items: center;
-    /* grid-template-columns: repeat(4, 1fr); */
-    /* grid-template-rows: auto; */
-    /* grid-template-rows: repeat(auto, 1fr); */
-    /* overflo; */
-    /* grid-gap: 2vw; */
     animation: moveWorkUp 3s forwards 3.5s linear;
-
-
-    /* display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;*/
-
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
     justify-content: start;
+
 }
+
 
 @keyframes moveWorkUp{
     100%{
@@ -120,13 +108,10 @@ svg:hover {
     #works div:hover { 
         box-shadow: 6px 6px 30px;
     }
-    
+
     
 @media only screen and (max-device-width : 1366px) {
-    /* #works{
-        grid-template-columns: 1fr 1fr;
-        grid-row-gap: 4vw
-    } */
+   
     #works div{
         width: 30vw;
         height: 30vw;
@@ -143,13 +128,10 @@ svg:hover {
 
 
 @media only screen and (max-device-width : 768px) {
-    /* #works{
-        grid-template-columns: 1fr 1fr;
-        grid-row-gap: 4vw
-    } */
+    
     #works div{
-        width: 35vw;
-        height: 35vw;
+        width: 22vw;
+        height: 22vw;
     }
     h1{
         line-height: 50px;
@@ -168,8 +150,8 @@ svg:hover {
         grid-row-gap: 4vw
     }
     #works div{
-        width: 70vw;
-        height: 70vw;
+        width: 65vw;
+        height: 65vw;
     }
     h1{
         line-height: 36px;
@@ -180,23 +162,6 @@ svg:hover {
             }
     }
 }
-
-
-
-/* 
-@media only screen and (max-device-width : 1024px) {
-    #works{
-        grid-template-columns: 1fr 1fr;
-        grid-row-gap: 4vw
-    }
-    #works div{
-        width: 35vw;
-        height: 35vw;
-    }
-    h1{
-        line-height: 70px;
-    }
-} */
 
 
 #footer{
