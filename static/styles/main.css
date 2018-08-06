@@ -1,3 +1,6 @@
+body, html {
+    margin: 0;
+}
 
 body{
     background: linear-gradient(to right, rgb(25, 79, 69), rgb(85, 173, 163));
@@ -78,30 +81,29 @@ svg:hover {
 
 
 #works {
-    margin: 5vh 15vw 0 15vw;
+    margin: 0 15vw 0 15vw;
     justify-items: center;
     animation: moveWorkUp 3s forwards 3.5s linear;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
     justify-content: start;
-
 }
-
+    
 
 @keyframes moveWorkUp{
     100%{
-        transform: translateY(-25%);
+        transform: translateY(-20%);
         }
 }
 
 
 #works div {
-    margin: 2em;
+    margin: 1em;
     background-color: brown;
     display: inline-block;
-    width: 23vh;
-    height: 23vh;
+    width: 18vh;
+    height: 18vh;
     box-shadow: 2px 2px 20px;
     flex: 0 0 auto;
 }
@@ -163,6 +165,14 @@ svg:hover {
     }
 }
 
+#feature{
+    background-color: white;
+    height: 70vh;
+    margin: 0 15vw 0 15vw;
+    text-align: center;
+    box-shadow: 2px 2px 20px;
+}
+   
 
 #footer{
     height: 20vh;

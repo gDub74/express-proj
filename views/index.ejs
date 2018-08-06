@@ -51,12 +51,25 @@
     </div>
 
     <div id="feature">
-
+        <h1 id="featureTitle"></h1>
     </div>
 
     <div id="footer">
         <p>the footer with icons/links to github and linked in and such...</p>
     </div>
+
+    <script>
+        let tag = document.querySelectorAll('.pieces');
+        let featureTitle = document.querySelector('#featureTitle');
+        tag.forEach(work => work.addEventListener('click', () => {
+            // add info to feature based on click
+            let content = work.textContent;
+            console.log('clicked on a work piece', content);
+            featureTitle.innerHTML = content;
+
+        }))
+
+    </script>
 
 </body>
 
