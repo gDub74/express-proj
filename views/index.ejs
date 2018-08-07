@@ -40,14 +40,14 @@
     </section>
 
     <div id="works">
-        <div class="pieces">1</div>
-        <div class="pieces">2</div>
-        <div class="pieces">3</div>
-        <div class="pieces">4</div>
-        <div class="pieces">5</div>
-        <div class="pieces">6</div>
-        <div class="pieces">7</div>
-        <div class="pieces">8</div>
+        <div class="pieces" order="0"></div>
+        <div class="pieces" order="1"></div>
+        <div class="pieces" order="2"></div>
+        <div class="pieces" order="3"></div>
+        <div class="pieces" order="4"></div>
+        <div class="pieces" order="5"></div>
+        <div class="pieces" order="6"></div>
+        <div class="pieces" order="7"></div>
     </div>
 
     <div id="feature">
@@ -61,14 +61,23 @@
     <script>
         let tag = document.querySelectorAll('.pieces');
         let featureTitle = document.querySelector('#featureTitle');
-        tag.forEach(work => work.addEventListener('click', () => {
-            // add info to feature based on click
-            let content = work.textContent;
-            console.log('clicked on a work piece', content);
-            featureTitle.innerHTML = content;
 
-        }))
-
+        // async call to json api for project data
+        async function loadJSON(fileName) {
+            const response = await fetch(fileName);
+            const jsonResponse = await response.json();
+            return jsonResponse;
+        }
+        //  a promise is returned from the async call
+        const allProjects = loadJSON('projects.json')
+            .then(result => {
+                // grab and set handlers in promise callback to make sure we have response first
+                tag.forEach(work => work.addEventListener('click', () => {
+                    let project = work.getAttribute('order');
+                    console.log('clicked on a work piece', project);
+                    featureTitle.innerHTML = result[project].name;
+                }))
+            });
     </script>
 
 </body>

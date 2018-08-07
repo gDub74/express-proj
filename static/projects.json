@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Team Manager",
+        "stack": "MEAN",
+        "description": " Manages a team roster and RSVP for a 3 game series. Add and remove players. View each player's status of 'Playing', 'Not Playing' and 'Undecided' for each of the 3 games.",
+        "imageURL" : ["/static/imsges/teamManager_addPlayer.png", "/static/imsges/teamManager_playerStatus.png"]
+    },
+    {
+        "name": "Socket.IO Chat",
+        "stack": "NODE, Express",
+        "description": "Using WebSockets technology by way of Socket.IO to build a real-time chat app"
+        
+    }
+
+
+]
