@@ -40,7 +40,9 @@
     </section>
 
     <div id="works">
-        <div class="pieces" order="0"></div>
+        <div class="pieces" order="0">
+            <img src="images/teamManager_playerStatus.png" alt="">
+        </div>
         <div class="pieces" order="1"></div>
         <div class="pieces" order="2"></div>
         <div class="pieces" order="3"></div>
@@ -51,7 +53,13 @@
     </div>
 
     <div id="feature">
-        <h1 id="featureTitle"></h1>
+        <div id="featureInfo">
+            <h2 id="featureTitle"></h2>
+            <p id="description"></p>
+        </div>
+        <div id="screenShot">
+            <img id="featureImage">
+        </div>
     </div>
 
     <div id="footer">
@@ -61,21 +69,25 @@
     <script>
         let tag = document.querySelectorAll('.pieces');
         let featureTitle = document.querySelector('#featureTitle');
+        let featureInfo = document.querySelector('#description');
+        let imageSrc = document.querySelector('#featureImage')
 
         // async call to json api for project data
         async function loadJSON(fileName) {
             const response = await fetch(fileName);
-            const jsonResponse = await response.json();
-            return jsonResponse;
+            return response.json();
         }
         //  a promise is returned from the async call
         const allProjects = loadJSON('projects.json')
             .then(result => {
-                // grab and set handlers in promise callback to make sure we have response first
+                // grab and set handlers in promise callback to make sure we have async response first
                 tag.forEach(work => work.addEventListener('click', () => {
                     let project = work.getAttribute('order');
                     console.log('clicked on a work piece', project);
                     featureTitle.innerHTML = result[project].name;
+                    featureInfo.innerHTML = result[project].description;
+                    let imgSrc = result[project].imageURL;
+                    imageSrc.setAttribute('src', imgSrc);
                 }))
             });
     </script>

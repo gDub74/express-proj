@@ -110,6 +110,10 @@ svg:hover {
     #works div:hover { 
         box-shadow: 6px 6px 30px;
     }
+    #works div img{
+        width: 100%;
+        height: 100%;
+    }
 
     
 @media only screen and (max-device-width : 1366px) {
@@ -166,13 +170,28 @@ svg:hover {
 }
 
 #feature{
-    background-color: white;
-    height: 70vh;
+    height: 65vh;
     margin: 0 15vw 0 15vw;
-    text-align: center;
-    box-shadow: 2px 2px 20px;
+    box-shadow: 2px 2px 15px black;
+    padding: 10px;
+    background-color: darkslategray;
+    color: rgb(255, 255, 255);
 }
-   
+#featureInfo{
+    display: inline-block;
+    vertical-align: top;
+    width: 34%;
+    height: 100%;
+}
+#screenShot{
+    display: inline-block;
+    width: 64%;
+    height: 100%;
+}
+#screenShot img{
+    width: 100%;
+    height: 100%;
+}
 
 #footer{
     height: 20vh;
