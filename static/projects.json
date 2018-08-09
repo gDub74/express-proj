@@ -8,8 +8,8 @@
     {
         "name": "Socket.IO Chat App",
         "stack": "NODE, Express",
-        "description": "Using WebSockets technology by way of Socket.IO to build a real-time chat app"
-        
+        "description": "Using WebSockets technology by way of Socket.IO to build a real-time chat app",
+        "imageURL" : "images/teamManager_playerStatus.png"
     }
 
 
