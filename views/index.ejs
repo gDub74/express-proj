@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" ype="image/x-icon" href="/images/favicon.JPG">
     <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -35,32 +36,37 @@
         </div>
     </header>
 
-    <section id="motto">
-
+    <section id="mobilFeature">
+        <div id="featureInfo">
+            <h2 id="mobilFeatureTitle">Team Manager App</h2>
+            <p id="mobilDescription">Full Stack MEAN app manages a team roster and RSVP for a 3 game series. Add and remove players. View each player's
+                status of 'Playing', 'Not Playing' and 'Undecided' for each game.</p>
+        </div>
+        <div id="screenShot">
+            <img id="mibilFeatureImage" src="images/teamManager_playerStatus.png">
+        </div>
     </section>
+
     <div id="works">
-        <div class="pieces" order="0">
+        <div class="thumbs" index="0">
             <img src="images/MEAN.png" alt="">
             <h3>Team Manager</h3>
         </div>
-        <div class="pieces" order="1">
+        <div class="thumbs" index="1">
             <img src="images/socket.png" alt="">
             <h3>Socket.IO Chat</h3>
         </div>
-        <div class="pieces" order="2"></div>
-        <div class="pieces" order="3"></div>
-        <div class="pieces" order="4"></div>
-        <div class="pieces" order="5"></div>
-        <div class="pieces" order="6"></div>
-        <div class="pieces" order="7"></div>
-        <div class="pieces" order="8"></div>
+        <div class="thumbs" index="2"></div>
+        <div class="thumbs" index="3"></div>
+        <div class="thumbs" index="4"></div>
+        <div class="thumbs" index="5"></div>
     </div>
 
     <div id="feature">
         <div id="featureInfo">
             <h2 id="featureTitle">Team Manager App</h2>
             <p id="description">Full Stack MEAN app manages a team roster and RSVP for a 3 game series. Add and remove players. View each player's
-                status of 'Playing', 'Not Playing' and 'Undecided' for each of the 3 games.</p>
+                status of 'Playing', 'Not Playing' and 'Undecided' for each game.</p>
         </div>
         <div id="screenShot">
             <img id="featureImage" src="images/teamManager_playerStatus.png">
@@ -68,11 +74,11 @@
     </div>
 
     <div id="footer">
-        <p>the footer with icons/links to github and linked in and such...</p>
+        <p>footer links blah blah blah...</p>
     </div>
 
     <script>
-        let tag = document.querySelectorAll('.pieces');
+        let thumbs = document.querySelectorAll('.thumbs');
         let featureTitle = document.querySelector('#featureTitle');
         let featureInfo = document.querySelector('#description');
         let imageSrc = document.querySelector('#featureImage')
@@ -83,12 +89,11 @@
             return response.json();
         }
         //  a promise is returned from the async call
-        const allProjects = loadJSON('projects.json')
+        loadJSON('projects.json')
             .then(result => {
                 // grab and set handlers in promise callback to make sure we have async response first
-                tag.forEach(work => work.addEventListener('click', () => {
-                    let project = work.getAttribute('order');
-                    console.log('clicked on a work piece', project);
+                thumbs.forEach(work => work.addEventListener('click', () => {
+                    let project = work.getAttribute('index');
                     featureTitle.innerHTML = result[project].name;
                     featureInfo.innerHTML = result[project].description;
                     let imgSrc = result[project].imageURL;

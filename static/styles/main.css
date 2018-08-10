@@ -89,10 +89,12 @@ svg:hover {
         }
     }
 
+#mobilFeature{
+    display: none
+}
 
 #works {
     margin: 0 15vw 0 15vw;
-    /* justify-items: center; */
     animation: moveWorkUp 3s forwards 3.5s linear;
     display: flex;
     flex-wrap: nowrap;
@@ -100,7 +102,7 @@ svg:hover {
     justify-content: start;
     height: 33vh;
 }
-    
+
 
 @keyframes moveWorkUp{
     100%{
@@ -109,7 +111,7 @@ svg:hover {
 }
 
 
-.pieces{
+.thumbs {
     text-align: center;
     margin:1.5em;
     display: inline-block;
@@ -121,6 +123,7 @@ svg:hover {
     transition-duration: .4s;
     border-radius: 50%;
     border: 1px solid black;
+    text-shadow: 1px 1px black;
 }
 .pieces:hover { 
     box-shadow: 6px 6px 30px;
@@ -155,6 +158,7 @@ svg:hover {
     margin-right: 5px;
     text-align: center;
     border-right: 2px solid red;
+    text-shadow: 1px 1px black;
 }
 
 #featureInfo p{
@@ -170,6 +174,7 @@ svg:hover {
     display: inline-block;
     width: 68%;
     height: 100%;
+    box-shadow: 5px 5px 20px black; 
 }
 #screenShot img{
     width: 100%;
@@ -201,38 +206,58 @@ svg:hover {
 } 
 
 
-@media only screen and (max-device-width : 768px) {
+@media only screen and (max-device-width : 812px) {
+
+    #tagLine{
+        font-size: 1.5em;
+    }
+
+    #mobilFeature{
+        display: block;
+        width: 99vw;
+        height: 99vh;
+        border: 4px solid red;
+        border-radius: 2px;
+        border-style: groove;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin: auto;
+        position: relative;
+        color: var(--text-color);
+    }
     
-    #works div{
-        width: 22vw;
-        height: 22vw;
-    }
-    h1{
-        line-height: 50px;
-    }
-    @keyframes moveWorkUp{
-        100%{
-            transform: translateY(-5%);
-            }
+    #works div, #feature{
+        display:none;
     }
 }
 
- 
+
 @media only screen and (max-device-width : 414px){
-    #works{
-        grid-template-columns: 1fr;
-        grid-row-gap: 4vw
+    #mobilFeature{
+        display: block;
+        width: 99vw;
+        height: 99vh;
+        border: 4px solid red;
+        border-radius: 2px;
+        border-style: groove;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin: auto;
+        position: relative;
     }
-    #works div{
-        width: 65vw;
-        height: 65vw;
+
+    #screenShot {
+        display: inline-block;
+        width: 64%;
+        height: 50%;
+        margin: 10px auto;
+    }
+
+    #works div,  #feature{
+        display: none;
     }
     h1{
-        line-height: 36px;
-    }
-    @keyframes moveWorkUp{
-        100%{
-            transform: translateY(-5%);
-            }
+        line-height: 1.19;
     }
 }
+                            
