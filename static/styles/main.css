@@ -7,15 +7,54 @@
 body, html {
     margin: 0;
     font-family: 'Barlow', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
     background: linear-gradient(to right, rgb(25, 79, 69), rgb(62, 214, 197));
 }
 
+nav{
+    display: flex;
+    height: 7vh;
+    justify-content: flex-end;
+    position: sticky;
+    top: 20px;
+}
+
+nav a{
+    display: block;
+    text-align: center;
+    width: 7vw;
+    height: 34px;
+    margin-right: 10px;
+    color: black;
+    line-height: 2;
+    border-radius: 5px;
+    transition-property: background-color color;
+    transition-duration: .6s;
+    opacity: 0;
+    animation: navAnimation 2.5s 4.5s forwards ease-in-out;
+    text-decoration: none;
+}
+
+
+@keyframes navAnimation {
+    to{
+        opacity: 1;
+    }
+}
+
+nav a:hover{
+    color: var(--text-color);
+    background-color: red;
+    box-shadow: 3px 3px 10px black;
+    transform: translate(background-color);
+}
+
 header {
     display: grid;
-    height: 100vh;
+    height: 93vh;
     grid-template: repeat(5, 1fr) /  repeat(3, 1fr);
 }
 
@@ -79,15 +118,21 @@ svg:hover {
     stroke-dasharray: 2375;
     stroke-dashoffset: 2375;
     fill-opacity: 0;
-    animation: dash 3.1s ease-in-out forwards;
+    animation: drawLogo 3.1s ease-in-out forwards;
 }
   
-    @keyframes dash {
+    @keyframes drawLogo {
         to { 
             fill-opacity: .85;
             stroke-dashoffset: 0; 
         }
     }
+
+
+#portfolio{
+    height: 90vh;
+    padding-top: 7vh;
+}
 
 #mobilFeature{
     display: none
@@ -100,14 +145,7 @@ svg:hover {
     flex-wrap: nowrap;
     overflow-x: auto;
     justify-content: start;
-    height: 33vh;
-}
-
-
-@keyframes moveWorkUp{
-    100%{
-        transform: translateY(-10%);
-        }
+    height: 30vh;
 }
 
 
@@ -115,8 +153,8 @@ svg:hover {
     text-align: center;
     margin:1.5em;
     display: inline-block;
-    width: 22vh;
-    height: 22vh;
+    width: 20vh;
+    height: 20vh;
     box-shadow: 2px 2px 20px;
     flex: 0 0 auto;
     transition-property: width height;
@@ -125,11 +163,11 @@ svg:hover {
     border: 1px solid black;
     text-shadow: 1px 1px black;
 }
-.pieces:hover { 
+.thumbs:hover { 
     box-shadow: 6px 6px 30px;
     cursor: pointer;
-    height: 22.5vh;
-    width: 22.5vh;
+    height: 21.5vh;
+    width: 21.5vh;
     transform: translate(height);
 }
 #works div img{
@@ -161,14 +199,25 @@ svg:hover {
     text-shadow: 1px 1px black;
 }
 
+/* #featureTitle{
+;
+} */
+
 #featureInfo p{
     margin: auto;
     padding-top: 1em;
+    padding-bottom: 1em;
     line-height: 1.25em;
     text-align: left;
     width: 80%;
     border-top: 2px solid red;
+    border-bottom: 2px solid red;
 }
+
+#implimentedTech{
+    background-color: red;
+}
+
 
 #screenShot{
     display: inline-block;
@@ -182,7 +231,7 @@ svg:hover {
     padding-left: 3px;
 }
 
-#footer{
+footer{
     height: 20vh;
     text-align: center;
     margin-top: 50px;

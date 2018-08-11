@@ -3,13 +3,15 @@
         "name": "Team Manager App",
         "stack": "MEAN",
         "description": "Full Stack MEAN app manages a team roster and RSVP for a 3 game series. Add and remove players. View each player's status of 'Playing', 'Not Playing' and 'Undecided' for each game.",
-        "imageURL" : "images/teamManager_playerStatus.png"
+        "mainImage" : "images/teamManager_playerStatus.png",
+        "implimentedTechThumbs" : ["images/MEAN.png", "images.angular.png"]
     },
     {
         "name": "Socket.IO Chat App",
         "stack": "NODE, Express",
-        "description": "Real time chat app using WebSockets technology",
-        "imageURL" : ""
+        "description": "Real time, cross browser capable chat app using WebSockets technology.",
+        "mainImage" : "images/socketChatScreenShot.png",
+        "implimentedTechThumbs" : ["images/expressjs.png"]
     },
     {},
     {},
