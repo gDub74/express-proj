@@ -18,7 +18,7 @@
     <nav>
         <a href="#home">Home</a>
         <a href="#portfolio">Projects</a>
-        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
     </nav>
     <header>
         <div id="logoContainerDiv">
@@ -47,8 +47,8 @@
         <div id="mobilFeature">
             <div id="featureInfo">
                 <h2 id="mobilFeatureTitle">Team Manager App</h2>
-                <p id="mobilDescription">Full Stack MEAN app manages a team roster and RSVP for a 3 game series. Add and remove players. View each
-                    player's status of 'Playing', 'Not Playing' and 'Undecided' for each game.</p>
+                <p id="mobilDescription">Full Stack MEAN app manages a team roster and RSVP for a 3 game series. Add and remove players. View and
+                    update each player's status for each game.</p>
             </div>
             <div id="screenShot">
                 <img id="mibilFeatureImage" src="images/teamManager_playerStatus.png">
@@ -57,13 +57,13 @@
 
         <div id="worksContainer">
             <div id="works">
+                <h3>Team Manager</h3>
                 <div class="thumbs" index="0">
                     <img src="images/MEAN.png" alt="">
-                    <h3>Team Manager</h3>
                 </div>
+                <h3>Socket.IO Chat</h3>
                 <div class="thumbs" index="1">
                     <img src="images/socket.png" alt="">
-                    <h3>Socket.IO Chat</h3>
                 </div>
                 <div class="thumbs" index="2"></div>
                 <div class="thumbs" index="3"></div>
@@ -91,12 +91,34 @@
         </div>
     </main>
 
-    <section id="about">
-        <div id="aboutContent">
+    <section id="contact">
+        <div id="email">
+            <h2>email: gregoryweberguitars@gmail.com</h2>
+        </div>
+        <div id="contactContent">
+            <div id="selfie">
+                <a href="#home">
+                    <img src="images/greg_weber.jpeg" alt="github logo">
+                </a>
+                <h2>Thanks for stopping by!</h2>
+            </div>
+            <div>
+                <a href="https://github.com/gDub74" target="_blank">
+                    <img src="images/github.png" alt="github logo">
+                </a>
+                <p>Find me on github</p>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/greg-weber/" target="_blank">
+                    <img src="images/linkedin.png" alt="linkedin logo">
+                </a>
+                <p>Find me on LinkedIn</p>
+            </div>
 
         </div>
-        <footer>
 
+        <footer>
+            <h4>copyright ©2018 Greg Weber</h4>
         </footer>
     </section>
 
@@ -109,13 +131,18 @@
         const miniThumbsDiv = document.querySelector('#miniThumbs')
         let projects;
 
-        async function loadJSON(fileName) {
-            const response = await fetch(fileName);
-            return response.json();
-        }   //  a promise is returned 
+        // async function loadJSON(fileName) {
+        //     const response = await fetch(fileName);
+        //     return response.json();
+        // }   //  a promise is returned 
 
-        loadJSON('projects.json')
-            .then(projectsData => projects = projectsData);
+        // loadJSON('projects.json')
+        //     .then(projectsData => projects = projectsData);
+
+        const loadJSON = fetch('projects.json');
+        loadJSON.then(els => els.json())
+            .then(projectsData => projects = projectsData)
+            .catch(err => console.log('opps, something went wrong, ', err));
 
 
         thumbs.forEach(thumb => thumb.addEventListener('click', () => {

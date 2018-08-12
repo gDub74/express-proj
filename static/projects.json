@@ -2,7 +2,7 @@
     {
         "name": "Team Manager App",
         "stack": "MEAN",
-        "description": "Full Stack MEAN app manages a team roster and RSVP for a 3 game series. Add and remove players. View each player's status for each game.",
+        "description": "Full Stack MEAN app manages a team roster and RSVP for a 3 game series. Add and remove players. View and update each player's status for each game.",
         "mainImage" : "images/teamManager_playerStatus.png",
         "implimentedTechThumbs" : ["images/MEAN.png", "images.angular.png"]
     },
