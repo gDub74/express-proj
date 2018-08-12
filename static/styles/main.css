@@ -250,6 +250,8 @@ svg:hover {
 #about{
     height: 100vh;
     background-color: rgba(255, 251, 235, .15);
+    background-image: url("/images/algorithmMaze.jpg");
+    opacity: .1;
 }
 
 #aboutContent{
