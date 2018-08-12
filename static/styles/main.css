@@ -20,6 +20,7 @@ nav{
     justify-content: flex-end;
     position: sticky;
     top: 20px;
+    z-index: 1;
 }
 
 nav a{
@@ -38,6 +39,9 @@ nav a{
     text-decoration: none;
 }
 
+nav a:last-child{
+    margin-right: 100px;
+}
 
 @keyframes navAnimation {
     to{
@@ -130,31 +134,22 @@ svg:hover {
 
 
 #portfolio{
-    height: 90vh;
     padding-top: 7vh;
+    text-align: center;
+    height: 100vh;
+    background-color: rgba(7, 45, 49, .15);
 }
 
 #mobilFeature{
     display: none
 }
 
-#works {
-    margin: 0 15vw 0 15vw;
-    animation: moveWorkUp 3s forwards 3.5s linear;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    justify-content: start;
-    height: 30vh;
-}
-
-
 .thumbs {
     text-align: center;
-    margin:1.5em;
+    margin: 5vh auto;
     display: inline-block;
-    width: 20vh;
-    height: 20vh;
+    width: 18vh;
+    height: 18vh;
     box-shadow: 2px 2px 20px;
     flex: 0 0 auto;
     transition-property: width height;
@@ -170,6 +165,25 @@ svg:hover {
     width: 21.5vh;
     transform: translate(height);
 }
+
+#worksContainer{
+    display: inline-block;
+    width: 33vh;
+    height: 75vh;
+    margin-top: 2.5em
+}
+
+#works {
+    margin: 1.5vh;
+    height: 95%;
+    animation: moveWorkUp 3s forwards 3.5s linear;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+    justify-content: start;
+    flex-direction: column;
+}
+
 #works div img{
     width: 100%;
     height: 100%;
@@ -179,14 +193,17 @@ svg:hover {
 }
 
 #feature{
-    height: 55vh;
-    margin: 0 18vw 0 18vw;
+    height: 75vh;
+    margin: 2em 0;
+    width: 60vw;
     box-shadow: 2px 2px 15px black;
-    padding: 10px;
+    /* padding: 10px; */
     color: var(--text-color);
     border: 4px solid red;
     border-radius: 10px;
     border-style: groove;
+    display: inline-block;
+    vertical-align: top;
 }
 #featureInfo{
     display: inline-block;
@@ -215,26 +232,34 @@ svg:hover {
 }
 
 #implimentedTech{
-    background-color: red;
+
 }
 
 
 #screenShot{
     display: inline-block;
     width: 68%;
-    height: 100%;
+    height: 68%;
     box-shadow: 5px 5px 20px black; 
 }
 #screenShot img{
     width: 100%;
     height: 100%;
-    padding-left: 3px;
+}
+
+#about{
+    height: 100vh;
+    background-color: rgba(255, 251, 235, .15);
+}
+
+#aboutContent{
+    height: 85%;
 }
 
 footer{
-    height: 20vh;
+    height: 15%;
     text-align: center;
-    margin-top: 50px;
+    background: linear-gradient(to right, rgb(25, 79, 69), rgb(62, 214, 197));
 }
 
 
