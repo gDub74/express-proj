@@ -8,6 +8,7 @@ body, html {
     margin: 0;
     font-family: 'Barlow', sans-serif;
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
     box-sizing: border-box;
 }
 
@@ -27,6 +28,7 @@ nav{
     height: 7vh;
     justify-content: flex-end;
     position: sticky;
+    position: -webkit-sticky;
     top: 20px;
     z-index: 1;
 }
