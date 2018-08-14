@@ -2,14 +2,17 @@
     {
         "name": "Team Manager App",
         "stack": "MEAN",
-        "description": "Full Stack MEAN Single Page Application utilizing nested components. Manages a team roster and RSVP for a 3 game series. Add and remove players, view and update player's status for each game.",
-        "mainImage" : "images/teamManager_playerStatus.png"
+        "description": "<span>M</span>anage a team roster and RSVP for a 3 game series. Add and remove players, view and update player's status for each game with this Full Stack MEAN-single page application. Makes use of Angular's nested components, dependency injection, RXJS Observables, and Bootstrap for form and table styling on the front end. Utilizes basic CRUD resource routing with Mongoose models and schema to connect to MongoDB.",
+        "mainImage" : "images/teamManager_playerStatus.png",
+        "techs": "<li>MongoDB</li><li>Mongoose</li><li>Express</li><li>Angular</li><li>Node</li><li>RXJS</li><li>Bootstrap</li>",
+        "codeHref": "https://github.com/CodingDojo-MEAN-03-18/gregWeber-MEAN/tree/master/Angular/Full-MEAN/teamManager"
     },
     {
         "name": "Socket.IO Chat App",
         "stack": "NODE, Express",
         "description": "Real time, cross browser capable group chat app using WebSockets technology and built on a NODE/Express.JS backend.",
-        "mainImage" : "images/socketChatScreenShot.png"
+        "mainImage" : "images/socketChatScreenShot.png",
+        "techs": "<li>Node</li><li>Express</li><li>Bootstrap</li>"
     },
     {},
     {},
