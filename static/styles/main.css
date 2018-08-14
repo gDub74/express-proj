@@ -11,14 +11,15 @@ body, html {
     box-sizing: border-box;
 }
 
+
+body{
+    background: linear-gradient(to right, rgb(25, 79, 69), rgb(62, 214, 197));
+}
+
 ul{
     list-style-type: none;
     padding: 0;
     line-height: 1.5em;
-}
-
-body{
-    background: linear-gradient(to right, rgb(25, 79, 69), rgb(62, 214, 197));
 }
 
 nav{
@@ -209,14 +210,7 @@ svg:hover {
 }
 #works h3{
     color:var(--text-color);
-}
-
-#featureGridContainer{
-    /* display: grid; */
-    width: 100%;
-    height: 100%;
-    /* grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2fr 5fr; */
+    text-shadow: 1px 1px black;
 }
 
 #feature{
@@ -231,27 +225,14 @@ svg:hover {
     border-style: groove;
     display: inline-block;
     vertical-align: top;
-}
-#featureInfo{
-    /* display: inline-block;
-    vertical-align: top;
-    width: 30%;
-    height: 100%;
-    margin-right: 5px;
-    text-align: center;
-    border-right: 2px solid red; */
     text-shadow: 1px 1px black;
-    /* grid-area: 1 / 1 / 1 / 4; */
 }
-
-/* #featureTitle{
-;
-} */
 
 #featureInfo p{
     margin: 2em;
     padding-top: 2em;
     border-top: 1px solid red;
+    text-align: left;
 }
 
 #screenShot{
@@ -293,6 +274,8 @@ svg:hover {
     width: 7vw;
     height: 7vw;
     border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 15px black;
 }
 
 #contact{
@@ -328,7 +311,7 @@ svg:hover {
     height: 100%;
     border-radius: 15%;
     box-shadow: 3px 3px 15px black;
-    border: 2px solid rgb(3, 46, 39);
+    border: 1px solid rgb(3, 46, 39);
 }
 
 #contactContent div img:hover{
