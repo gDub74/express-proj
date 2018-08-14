@@ -9,7 +9,7 @@
     {
         "name": "Socket.IO Chat App",
         "stack": "NODE, Express",
-        "description": "Real time, cross browser capable group chat app using WebSockets technology.",
+        "description": "Real time, cross browser capable group chat app using WebSockets technology and built on a NODE/Express.JS backend.",
         "mainImage" : "images/socketChatScreenShot.png",
         "implimentedTechThumbs" : ["images/expressjs.png"]
     },

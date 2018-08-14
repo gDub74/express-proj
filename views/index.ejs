@@ -78,41 +78,61 @@
                 <h2 id="featureTitle">Team Manager App</h2>
                 <p id="description">Full Stack MEAN app manages a team roster and RSVP for a 3 game series. Add and remove players. View each
                     player's status for each game.</p>
-                <div id="implimentedTech">
-                    <h3>Implimented Technology:</h3>
-                    <div id="miniThumbs">
-                        <img src="" alt="">
+            </div>
+            <div id="screenShot">
+                <div id="imageContainer">
+                    <img id="featureImage" src="images/teamManager_playerStatus.png">
+                </div>
+            </div>
+
+            <div id="additionalInfoContainer">
+                <div id="additionalInfo">
+                    <div>
+                        <!-- <h3>Implementations</h3> -->
+                        <ul>
+                            <li>MongoDB</li>
+                            <li>Mongoose</li>
+                            <li>Express</li>
+                            <li>Angular</li>
+                            <li>Node.js</li>
+                            <li>CRUD</li>
+                            <li>RXJS</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Check out the code:</h4>
+                        <a id="githubLink" target='blank' href="https://github.com/CodingDojo-MEAN-03-18/gregWeber-MEAN/tree/master/Angular/Full-MEAN/teamManager">
+                            <img src="images/github.png" alt="github logo">
+                        </a>
                     </div>
                 </div>
             </div>
-            <div id="screenShot">
-                <img id="featureImage" src="images/teamManager_playerStatus.png">
-            </div>
+        </div>
         </div>
     </main>
 
     <section id="contact">
         <div id="email">
-            <h2>email: gregoryweberguitars@gmail.com</h2>
+            <h3>email: &nbsp gregoryweberguitars@gmail.com</h3>
         </div>
         <div id="contactContent">
             <div id="selfie">
                 <a href="#home">
                     <img src="images/greg_weber.jpeg" alt="github logo">
                 </a>
-                <h2>Thanks for stopping by!</h2>
+                <h3>Thanks for stopping by!</h3>
             </div>
             <div>
                 <a href="https://github.com/gDub74" target="_blank">
                     <img src="images/github.png" alt="github logo">
                 </a>
-                <p>Find me on github</p>
+                <h3>Find me on github</h3>
             </div>
             <div>
                 <a href="https://www.linkedin.com/in/greg-weber/" target="_blank">
                     <img src="images/linkedin.png" alt="linkedin logo">
                 </a>
-                <p>Find me on LinkedIn</p>
+                <h3>Find me on LinkedIn</h3>
             </div>
 
         </div>
@@ -150,7 +170,7 @@
             const proj = projects[index];
             let featureImgSrc = projects[index].mainImage;
 
-            // set info in feature
+            // // set info in feature
             featureTitle.innerHTML = proj.name;
             featureInfo.innerHTML = proj.description;
             featureImage.setAttribute('src', featureImgSrc);
