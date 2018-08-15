@@ -159,8 +159,8 @@ svg:hover {
     text-align: center;
     margin: 1vh auto;
     display: inline-block;
-    width: 18vh;
-    height: 18vh;
+    width: 16vh;
+    height: 16vh;
     box-shadow: 2px 2px 20px;
     flex: 0 0 auto;
     transition-property: width height;
@@ -290,6 +290,9 @@ svg:hover {
     margin-left: 4vw;
     padding-top: 18px;
     margin: 5px 0 10px 4vw;
+}
+#tech li:hover{
+    color: red;
 }
 
 #contact{

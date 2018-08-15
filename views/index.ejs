@@ -49,14 +49,15 @@
                 <div class="thumbs" data-index="0">
                     <img src="images/MEAN.png" alt="MEAN stack logo">
                 </div>
+                <h3>My Portfolio</h3>
+                <div class="thumbs" data-index="1" style="background-color: rgb(255, 249, 241)">
+                    <img src="images/nodejs-seeklogo.com.svg" alt="MEAN stack logo">
+                </div>
                 <h3>Socket.IO Chat</h3>
-                <div class="thumbs" data-index="1">
+                <div class="thumbs" data-index="2">
                     <img src="images/socket.png" alt="socket.io logo">
                 </div>
-                <div class="thumbs" data-index="2"></div>
                 <div class="thumbs" data-index="3"></div>
-                <div class="thumbs" data-index="4"></div>
-                <div class="thumbs" data-index="5"></div>
             </div>
         </div>
 
@@ -65,10 +66,10 @@
             <div id="featureInfo">
                 <h2 id="featureTitle">Team Manager App</h2>
                 <p id="description"><span>M</span>anage a team roster and RSVP for a 3 game series. Add and remove players,
-                    view and update player's status for each game with this Full Stack MEAN-single page application. Makes
-                    use of Angular's nested components, dependency injection, RXJS Observables, and Bootstrap for form and
-                    table styling on the front end. Utilizes basic CRUD resource routing with Mongoose models and schema
-                    to connect to MongoDB.
+                    view and update player's status for each game with this Full Stack MEAN-single page application. Draws
+                    on Angular's use of nested components, routing, data binding, and dependency injection. Also utilizes
+                    RXJS Observables, CRUD resource routing with Mongoose models and schema to connect to MongoDB, and Bootstrap
+                    for form and table styling.
                 </p>
             </div>
             <div id="screenShot">
@@ -86,7 +87,6 @@
                             <li>Express</li>
                             <li>Angular</li>
                             <li>Node</li>
-                            <li>CRUD</li>
                             <li>RXJS</li>
                             <li>Bootstrap</li>
                         </ul>
@@ -141,7 +141,6 @@
         const miniThumbsDiv = document.querySelector('#miniThumbs');
         const tech = document.querySelector('#tech');
         const ghLink = document.querySelector('#githubLink');
-        console.log(ghLink);
         let projects;
 
         const loadJSON = fetch('projects.json');

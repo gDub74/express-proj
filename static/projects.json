@@ -2,10 +2,18 @@
     {
         "name": "Team Manager App",
         "stack": "MEAN",
-        "description": "<span>M</span>anage a team roster and RSVP for a 3 game series. Add and remove players, view and update player's status for each game with this Full Stack MEAN-single page application. Makes use of Angular's nested components, dependency injection, RXJS Observables, and Bootstrap for form and table styling on the front end. Utilizes basic CRUD resource routing with Mongoose models and schema to connect to MongoDB.",
+        "description": "<span>M</span>anage a team roster and RSVP for a 3 game series. Add and remove players, view and update player's status for each game with this Full Stack MEAN-single page application. Draws on Angular's use of nested components, routing, data binding, and dependency injection. Also utilizes RXJS Observables, CRUD resource routing with Mongoose models and schema to connect to MongoDB, and Bootstrap for form and table styling.",
         "mainImage" : "images/teamManager_playerStatus.png",
         "techs": "<li>MongoDB</li><li>Mongoose</li><li>Express</li><li>Angular</li><li>Node</li><li>RXJS</li><li>Bootstrap</li>",
         "codeHref": "https://github.com/CodingDojo-MEAN-03-18/gregWeber-MEAN/tree/master/Angular/Full-MEAN/teamManager"
+    },
+    {
+        "name": "My Coding Portfolio",
+        "stack": "Node, Express",
+        "description": "<span>B</span>uilt in Node.js with Express, this project has been my deepest exploration into CSS and Frontend Design thus far. I utilize CSS Grid, FlexBox, Variables, Pseudo Elements, Viewport Units, Animations, and Media Queries. The most rewarding aspect was to use my logo as inline SVG, animating it using stroke-dasharray properties. I also employ JavaScript and DOM event handlers with asynchronous Fetch API to retrieve JSON  data for this 'feature' section.",
+        "mainImage" : "images/portfolio_screenshot.png",
+        "techs": "<li>Node</li><li>Express</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>SVG</li><li></li>",
+        "codeHref": "https://github.com/gDub74/express-proj"
     },
     {
         "name": "Socket.IO Chat App",
@@ -14,13 +22,5 @@
         "mainImage" : "images/socketChatScreenShot.png",
         "techs": "<li>Node</li><li>Express</li><li>Bootstrap</li>"
     },
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
     {}
 ]
