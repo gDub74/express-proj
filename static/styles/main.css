@@ -155,10 +155,6 @@ svg:hover {
     background-color: rgba(7, 45, 49, .15);
 }
 
-#mobilFeature{
-    display: none
-}
-
 .thumbs {
     text-align: center;
     margin: 1vh auto;
@@ -233,6 +229,7 @@ svg:hover {
     display: inline-block;
     vertical-align: top;
     text-shadow: 1px 1px black;
+    overflow: scroll;
 }
 
 #featureInfo p{
@@ -248,7 +245,7 @@ svg:hover {
 }
 
 #screenShot{
-    height: 70%;
+    height: 60%;
     width: 60%;
     display: inline-block;
 }
@@ -281,11 +278,18 @@ svg:hover {
 }
 
 #additionalInfo img{
-    width: 7vw;
-    height: 7vw;
+    width: 6vw;
+    height: 6vw;
     border-radius: 10px;
     border: 1px solid black;
     box-shadow: 3px 3px 15px black;
+}
+#additionalInfo h4{
+    border-top:1px solid red;
+    width: 10vw;
+    margin-left: 4vw;
+    padding-top: 18px;
+    margin: 5px 0 10px 4vw;
 }
 
 #contact{
@@ -354,70 +358,100 @@ footer h4{
 
 @media only screen and (max-device-width : 1366px) {
    
-    #works div{
-        width: 30vw;
-        height: 30vw;
-    }
     h1{
         line-height: 80px;
     }
-    @keyframes moveWorkUp{
-        100%{
-            transform: translateY(-15%);
-            }
+    #worksContainer{
+        width: 20vw;
+    }
+    #feature{
+        width:65vw;
+    }
+    nav{
+        top: 40px
+    }
+    nav a {
+        width: 10vw;
+    }
+    nav a:last-child{
+        margin-right: 50px;
+    }
+    #featureImage{
+        margin-top: 45px;
+    }
+    footer{
+        font-size: .8em;
     }
 } 
 
 
 @media only screen and (max-device-width : 812px) {
 
+    h3{
+        font-size: 1em;
+    }
+    nav a{
+        font-size: .85em;
+        line-height: 1.5em;
+        height: 23px;
+        margin: 0;
+    }
     #tagLine{
         font-size: 1.5em;
     }
-
-    #mobilFeature{
+    nav{
+        top: 10px;
+    }
+    #portfolio{
+        padding-top: 4vh;
+    }
+    #additionalInfo{
         display: block;
-        width: 99vw;
-        height: 99vh;
-        border: 4px solid red;
-        border-radius: 2px;
-        border-style: groove;
-        box-sizing: border-box;
-        border-radius: 10px;
-        margin: auto;
-        position: relative;
-        color: var(--text-color);
     }
-    
-    #works div, #feature{
-        display:none;
+    #additionalInfo h4{
+        margin-bottom: 5px;
+        margin-top: 5px;
     }
+
+    #screenShot img{
+        margin-top: 25px;
+    }
+    #contact{
+        height: 93vh;
+    }
+    #contactContent{
+        height:60%;
+    }
+    #contactContent div{
+        margin-bottom: 30px;
+    }
+    #contactContent div h3{
+        font-size: .9em;
+    }
+
 }
 
 
 @media only screen and (max-device-width : 414px){
-    #mobilFeature{
-        display: block;
-        width: 99vw;
-        height: 99vh;
-        border: 4px solid red;
-        border-radius: 2px;
-        border-style: groove;
-        box-sizing: border-box;
-        border-radius: 10px;
-        margin: auto;
-        position: relative;
-    }
-
+   
     #screenShot {
         display: inline-block;
         width: 64%;
         height: 50%;
         margin: 10px auto;
     }
-
-    #works div,  #feature{
-        display: none;
+    #contactContent{
+        flex-direction: column;
+        height: 75vh;
+    }
+    #contactContent div h3{ 
+    display: none;
+    }
+    nav{
+        top: 20px
+    }
+    nav a{
+        width: 25vw;
     }
     h1{
         line-height: 1.19;
