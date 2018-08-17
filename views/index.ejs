@@ -155,24 +155,18 @@
             .then(projectsData => projects = projectsData)
             .catch(err => console.log('oops, something went wrong, ', err));
 
-
         thumbs.forEach(thumb => thumb.addEventListener('click', () => {
             let index = thumb.getAttribute('data-index');
             const proj = projects[index];
             const featureImgSrc = proj.mainImage;
             const implementedTech = proj.techs;
             const codeLink = proj.codeHref;
-            console.log(codeLink);
-
-
             featureTitle.innerHTML = proj.name;
             featureInfo.innerHTML = proj.description;
             featureImage.setAttribute('src', featureImgSrc);
             tech.innerHTML = implementedTech;
             ghLink.setAttribute('href', codeLink);
-
         }));
-
     </script>
 
 </body>
