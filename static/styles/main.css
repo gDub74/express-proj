@@ -149,91 +149,49 @@ svg:hover {
 
 
 #portfolio{
-    padding-top: 7vh;
+    /* padding-top: 7vh; */
+    display: flex;
     text-align: center;
     height: 100vh;
     background-color: rgba(7, 45, 49, .15);
 }
 
-.thumbs {
-    text-align: center;
-    margin: 1vh auto;
-    display: inline-block;
-    width: 16vh;
-    height: 16vh;
-    box-shadow: 2px 2px 20px;
-    flex: 0 0 auto;
-    transition-property: width height;
-    transition-duration: .4s;
-    border-radius: 50%;
-    border: 1px solid black;
-    text-shadow: 1px 1px black;
-    margin-bottom: 3em;
-}
-.thumbs:hover { 
-    box-shadow: 6px 6px 30px;
-    cursor: pointer;
-    height: 21.5vh;
-    width: 21.5vh;
-    transform: translate(height);
-}
-
-#worksContainer{
-    display: inline-block;
-    width: 33vh;
-    height: 75vh;
-    margin: 2.6em 1.5em 0 0;
-    border-radius: 10px;
-    transition-property: background-color;
-    transition-duration: .6s;
-    padding-top: 10px
-}
-
-#worksContainer:hover{
-    background-color: rgb(27, 89, 79);
-    transform: translate(background-color);
-}
-
-
-#works {
-    margin: 1.5vh;
-    height: 95%;
-    animation: moveWorkUp 3s forwards 3.5s linear;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-y: auto;
-    justify-content: start;
-    flex-direction: column;
-}
-
-#works div img{
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-#works h3{
-    color:var(--text-color);
-    text-shadow: 1px 1px black;
-}
 
 #feature{
     height: 75vh;
-    margin: 2em 0;
-    width: 60vw;
+    width: 70vw;
+    display: flex;
+    margin: auto;
     box-shadow: 2px 2px 15px black;
     padding: 10px;
     color: var(--text-color);
     border: 4px solid red;
     border-radius: 10px;
     border-style: groove;
-    display: inline-block;
     vertical-align: top;
     text-shadow: 1px 1px black;
     overflow: scroll;
 }
 
+#featureContentWrapper{
+    display: inline-block;
+    width: 95%;
+    margin: 0 auto;
+}
+
+#featureInfo h2{
+    display: flex;
+    margin: 10px 0px 5px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+#featureTitle{
+    margin: 0px 60px;
+}
+
 #featureInfo p{
-    margin: 2em;
+    margin: 0 2em 20px 2em;;
     padding-top: 1em;
     border-top: 1px solid red;
     text-align: left;
@@ -242,6 +200,29 @@ svg:hover {
 #featureInfo p > :first-child{
     font-size: 1.5em;
     color: red;
+}
+#featureInfo img{
+    width: 10vh;
+    height: 10vh;
+    margin: 5px 60px;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 50%
+}
+.arrowContainer{
+    display: flex;
+    margin: auto;
+}
+.arrows{
+    color: var(--text-color);
+    font-size: 3em;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.arrows:hover{
+    background-color: rgba(163, 177, 171, .5);
+    color: black;
+    
 }
 
 #screenShot{
@@ -320,8 +301,8 @@ svg:hover {
 
 #contactContent div{
     align-self: center;
-    width: 18vh;
-    height: 18vh;
+    width: 16vh;
+    height: 16vh;
     text-align: center;
 }
 #contactContent div img{
