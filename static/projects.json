@@ -3,6 +3,7 @@
         "name": "Team Manager App",
         "description": "<span>M</span>anage a team roster and RSVP for a 3 game series. Add and remove players, view and update player's status for each game with this Full Stack MEAN-single page application. Draws on Angular's use of nested components, services, routing, data binding, and dependency injection. Also utilizes RXJS Observables; CRUD resource routing with Mongoose models and schema to connect to MongoDB; Bootstrap for form and table styling.",
         "mainImage" : "images/teamManager_playerStatus.png",
+        "titleImage" : "images/MEAN.png",
         "techs": "<li>MongoDB</li><li>Mongoose</li><li>Express</li><li>Angular</li><li>Node</li><li>RXJS</li><li>Bootstrap</li>",
         "codeHref": "https://github.com/CodingDojo-MEAN-03-18/gregWeber-MEAN/tree/master/Angular/Full-MEAN/teamManager"
     },
@@ -10,13 +11,15 @@
         "name": "Book Club App",
         "description": "<span>F</span>ull stack Python-Django-SQLite MVC application. Targets a book club for writing and reading book reviews. User login and registration with Regular Expression matching and Bcrypt for password/email validation and encryption. Keeps track of user sessions for dynamic routing and creation/deletion of book reviews. Incorporates Object Relational Mapping for SQLite interaction.",
         "mainImage" : "images/book_club_screenshot.png",
+        "titleImage" : "images/python.png",
         "techs": "<li>Python</li><li>Django</li><li>SQLite</li><li>Orm</li><li>Sessions</li><li>Bcrypt</li>",
         "codeHref": "https://github.com/gDub74/Coding-Dojo-Assignments/tree/master/Python/Django/belt_reviewer"
     },
     {
         "name": "My Coding Portfolio",
-        "description": "<span>B</span>uilt on Node.js with Express, this project has been my deepest exploration into CSS and Frontend Design thus far applying CSS Grid, FlexBox, Pseudo Elements, Viewport Units, Animations, and Media Queries. The most rewarding aspect has been learning to use my logo as inline SVG and animating it using stroke-dasharray properties. I also employ JavaScript and DOM event handlers with asynchronous Fetch API to retrieve JSON data.",
+        "description": "<span>B</span>uilt on Node.js with Express, this project has been my deepest exploration into CSS and Frontend Design thus far applying CSS Grid, FlexBox, Pseudo Classes, Viewport Units, Animations, and Media Queries. The most rewarding aspect has been learning to use my logo as inline SVG and animating it using stroke-dasharray properties. I also employ JavaScript and DOM event handlers with asynchronous Fetch API to retrieve JSON data.",
         "mainImage" : "images/portfolio_screenshot.png",
+        "titleImage" : "images/nodejs.png",
         "techs": "<li>Node</li><li>Express</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>SVG</li>",
         "codeHref": "https://github.com/gDub74/express-proj"
     },
@@ -24,6 +27,7 @@
         "name": "Socket.IO Chat App",
         "description": "<span>R</span>eal-time group chat app using WebSockets technology built with Socket.IO on a NODE/Express backend. Multiple people can join and start chatting with each other across multiple browsers. Upon joining, the app functions such that all previous chat messages are displayed. Socket.IO gives us the ability to set up event listeners on both the client and the server with a handshake, and be able to emit data in either direction on that open connection.",
         "mainImage" : "images/group_chat_2.png",
+        "titleImage" : "images/socket.png",
         "techs": "<li>Node</li><li>Express</li><li>JavaScript</li><li>jQuery</li><li>Bootstrap</li>",
         "codeHref": "https://github.com/gDub74/Coding-Dojo-Assignments/tree/master/MEAN/Express/Socket.io/group_chat"
     },
@@ -31,6 +35,7 @@
         "name": "Event Emitter Module",
         "description": "<span>E</span>vent Emitters are objects that serve as the core building block in event-driven architectures. This module's functionality is such that you can register named events with any number of callback handlers; emit registered events and upon emission pass in any additional arguments to the handler(s); remove specific previously registered events; remove all handlers associated with a given event; register a one-time only event/handler. The implementation uses ES6 classes and arrow functions; unit testing with Jest and written documentation.",
         "mainImage" : "images/eventz_screenshot.png",
+        "titleImage" : "images/JavaScript.png",
         "techs": "<li>JS Module</li><li>ES6</li><li>Jest</li>",
         "codeHref": "https://github.com/gDub74/Eventz"
     }

@@ -220,7 +220,7 @@ svg:hover {
     border-radius: 50%;
 }
 .arrows:hover{
-    background-color: rgba(163, 177, 171, .5);
+    background-color: rgba(163, 177, 171, .25);
     color: black;
     
 }
@@ -269,9 +269,8 @@ svg:hover {
 #additionalInfo h4{
     border-top:1px solid red;
     width: 10vw;
-    margin-left: 4vw;
     padding-top: 18px;
-    margin: 5px 0 10px 4vw;
+    margin: 5px 0 10px 5vw;
 }
 #tech li:hover{
     color: red;
