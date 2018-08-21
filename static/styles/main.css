@@ -6,6 +6,7 @@
 
 body, html {
     margin: 0;
+    paddign: 0;
     font-family: 'Barlow', sans-serif;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
